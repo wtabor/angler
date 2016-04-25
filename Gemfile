@@ -17,13 +17,15 @@ gem 'coffee-rails',            '4.1.0'
 gem 'jquery-rails',            '4.0.3'
 gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
+gem 'bootstrap-generators',    '~> 3.3.4'
 gem 'sdoc',                    '0.4.0', group: :doc
 
 group :development, :test do
-  gem 'sqlite3',     '1.3.9'
-  gem 'byebug',      '3.4.0'
-  gem 'web-console', '2.0.0.beta3'
-  gem 'spring',      '1.1.3'
+  gem 'sqlite3',       '1.3.9'
+  gem 'byebug',        '3.4.0'
+  gem 'web-console',   '2.0.0.beta3'
+  gem 'spring',        '1.1.3'
+  gem 'better_errors', '2.1.1'
 end
 
 group :test do
