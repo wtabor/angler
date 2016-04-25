@@ -1,5 +1,7 @@
 class PostsController < ApplicationController
+  before_action :signed_in_user, only: [:edit, :update, :destroy]
   before_action :set_post, only: [:show, :edit, :update, :destroy]
+  before_action :verify_correct_user, only: [:edit, :update, :destroy]
 
   # GET /posts
   # GET /posts.json
@@ -25,7 +27,7 @@ class PostsController < ApplicationController
   # POST /posts.json
   def create
     @post = Post.new(post_params)
-    @post.user = current_user       # associate the new todo to the current_user
+    @post.user = current_user       # associate the new post to the current_user
 
     respond_to do |format|
       if @post.save
@@ -72,4 +74,9 @@ class PostsController < ApplicationController
     def post_params
       params.require(:post).permit(:title, :url)
     end
+
+     def verify_correct_user
+       @post = current_user.posts.find_by(id: params[:id])
+       redirect_to root_url, notice: 'Access Denied!' if @post.nil?
+     end
 end

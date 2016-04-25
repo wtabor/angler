@@ -1,5 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+  before_action :signed_in_user, only: [:index, :show, :edit, :update, :destroy]
+  before_action :verify_correct_user, only: [:show, :edit, :update, :destroy]
 
   # GET /users
   # GET /users.json
@@ -76,4 +78,9 @@ def create
                                    :password,
                                    :password_confirmation)
     end
+
+    def verify_correct_user
+       user = User.find_by(id: params[:id])
+       redirect_to root_url, notice: 'Access Denied!' unless current_user?(user)
+     end
 end
