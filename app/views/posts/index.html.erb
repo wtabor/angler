@@ -1,0 +1,28 @@
+<div class="page-header">
+
+  <h1>Welcome</h1>
+</div>
+
+<div class="table-responsive posts">
+  <table class="table table-striped table-bordered table-hover">
+    <thead>
+      <tr>
+            <th>Title</th>
+            <th>Url</th>
+            <th>Show</th>
+        <th>Edit</th>
+        <th>Destroy</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <%= content_tag_for(:tr, @posts) do |post| %>
+            <td><%= post.title %></td>
+            <td><%= post.url %></td>
+            <td><%= link_to 'Show', post %></td>
+        <td><%= link_to 'Edit', edit_post_path(post) %></td>
+        <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      <% end %>
+    </tbody>
+  </table>
+</div>
