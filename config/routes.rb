@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+<<<<<<< HEAD
   get 'static_pages/home'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -55,4 +56,9 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+=======
+  root                'static_pages#home'
+  get    'help'    => 'static_pages#help'
+  get    'about'   => 'static_pages#about'
+>>>>>>> static-pages
 end

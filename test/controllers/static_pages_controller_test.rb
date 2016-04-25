@@ -6,4 +6,12 @@ class StaticPagesControllerTest < ActionController::TestCase
     assert_response :success
   end
 
+<<<<<<< HEAD
+=======
+  test "should get help" do
+    get :help
+    assert_response :success
+  end
+
+>>>>>>> static-pages
 end
