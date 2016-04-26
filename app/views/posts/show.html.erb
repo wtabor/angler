@@ -1,8 +1,9 @@
+<!-- Main link w/ title -->
 <div class="page-header">
   <h1><a href="<%= @post.url %>"><%= @post.title %></a><br> <small>Submitted by <%= @post.user.email %></small></h1>
 </div>
 
-
+  <!-- Renders Edit/Back if current user is author -->
   <% if @post.user == current_user %>
     <div class="btn-group pull-right">
     <%= link_to posts_path, class: 'btn btn-default' do %>
@@ -16,6 +17,7 @@
     </div>
   <% end %>
 
+<!-- Shows post documentation -->
 <dl class="dl-horizontal">
   <dt>Url:</dt>
   <dd><%= @post.url %></dd>
