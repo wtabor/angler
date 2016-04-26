@@ -3,8 +3,15 @@ Rails.application.routes.draw do
   root to: 'posts#index'
 
   resources :users
-  resources :posts
   resources :sessions, only:[:new, :create, :destroy]
+  resources :posts do
+    member do
+      put "like",    to: "posts#upvote"
+      put "dislike", to: "posts#downvote"
+    end
+  end
+
+
 
   match '/about',   to: 'static_pages#about',   via: 'get'
   match '/signup',  to: 'users#new',            via: 'get'

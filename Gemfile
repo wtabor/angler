@@ -18,7 +18,9 @@ gem 'turbolinks',              '2.3.0'
 gem 'jbuilder',                '2.2.3'
 gem 'bootstrap-generators',    '~> 3.3.4'
 gem 'pg',                      '0.17.1'
+gem 'acts_as_votable',         '0.10.0'
 gem 'sdoc',                    '0.4.0', group: :doc
+
 
 
 group :development, :test do

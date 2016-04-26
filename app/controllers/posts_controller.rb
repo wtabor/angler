@@ -12,6 +12,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @postuser = Post.find(params[:id])
   end
 
   # GET /posts/new
@@ -64,6 +65,19 @@ class PostsController < ApplicationController
     end
   end
 
+  def upvote
+    @post = Post.find(params[:id])
+    @post.upvote_by current_user
+    redirect_to posts_path
+  end
+
+  def downvote
+    @post = Post.find(params[:id])
+    @post.downvote_by current_user
+    redirect_to posts_path
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
@@ -79,4 +93,6 @@ class PostsController < ApplicationController
        @post = current_user.posts.find_by(id: params[:id])
        redirect_to root_url, notice: 'Access Denied!' if @post.nil?
      end
+
+
 end
