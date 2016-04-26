@@ -1,28 +1,110 @@
-== README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Angler
 
-Things you may want to cover:
+#####A news hub for fishing enthusiasts!
+ 
+### Version
+1.0
 
-* Ruby version
+### Minimum Requirements
+ [General Assembly] rubric
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Have at least 2 models (more if they make sense) – one representing someone using your application, and one that represents the main functional idea for your app
+* Include sign up/log in functionality, with encrypted passwords & an authorization flow
+* Have complete RESTful routes for at least one of your resources with GET, POST, PUT, PATCH, and DELETE
+* Utilize an ORM to create a database table structure and interact with your relationally-stored data
+* Include wireframes that you designed during the planning process
+* Have semantically clean HTML and CSS
+* Be deployed online and accessible to the public
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+
+### Planning
+[Trello]
+
+Wireframes:
+
+![alt-text][Wireframe]
+
+###Features 
+  - Log in/Log out
+  - Authentication
+  - Authorization
+  - View Home without logging in
+  - Upvote/Downvote posts
+  - Comment on posts
+  - Full CRUD with hidden editing
+
+###Technologies
+  - Ruby/Rails
+  - HTML
+  - CSS
+  - Bootstrap
+  - PostgresQL
+  
+  
+### User Stories
+As a *User*
+
+I want to *Play Tic-Tac-Toe against a friend*
+
+to *determine a winner from a best of five*
+
+As a *Player*
+
+I want to *Keep score over the course of multiple games*
+
+As a *Player*
+
+I want to *Tic-Tac-Toe to load and start*
+
+without *needing to hit multiple buttons*
+
+As a *User*
+
+I want the format *to look, feel, and act familar*
+
+As a *User*
+
+I want to *avoid misclicks*
+
+to *keep the game fair and functional*
+
+### Functionality
+Game found here: [GH-Pages]
+
+
+* Define Variables
+
+
+
+  
+### Todos
+
+ - Add Hover Move Cursor
+ - Additional Styling
+ - Randomizer
+
+License
+----
+
+MIT
+
+
+
+
+[//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
+
+   [GH-Pages]: <http://wtabor.github.io/tic-tac-toe/>
+   [General Assembly]: <https://github.com/ATL-WDI-Exercises/project-two-requirements>
+   [dill]: <https://github.com/joemccann/dillinger>
+   [git-repo-url]: <https://github.com/joemccann/dillinger.git>
+   [jQuery]: <http://jquery.com>
+   [Trello]: <https://trello.com/b/ceBOmnGB>
+   [Wireframe]: https://github.com/wtabor/tic-tac-toe/blob/gh-pages/images/tic-wireframe.png "Wireframe"
+
+
+   [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
+   [PlGh]:  <https://github.com/joemccann/dillinger/tree/master/plugins/github/README.md>
+   [PlGd]: <https://github.com/joemccann/dillinger/tree/master/plugins/googledrive/README.md>
+   [PlOd]: <https://github.com/joemccann/dillinger/tree/master/plugins/onedrive/README.md>
