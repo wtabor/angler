@@ -1,13 +1,10 @@
   <!-- Renders if signed in -->
-<% if signed_in? %>
-  <div class="page-header">
-    <%= link_to posts_path, class: 'btn btn-default' do %>
-      <span class="glyphicon glyphicon-list-alt"></span>
-      Back
-    <% end %>
-  <h1>Editing post</h1>
+
+  <% if @post.user == current_user -%>
+  <div class="btn-group pull-right">
+    <%= link_to 'Destroy Post', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-destroy" %>
   </div>
+<% end %>
+<br>
 
   <%= render 'form' %>
-
-<% end %>

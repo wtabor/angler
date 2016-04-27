@@ -1,31 +1,52 @@
-<!-- Main link w/ title -->
-<div class="page-header">
-  <h1><a href="<%= @post.url %>"><%= @post.title %></a><br> <small>Submitted by <%= @post.user.email %></small></h1>
-</div>
-
-  <!-- Renders Edit/Back if current user is author -->
+<!-- Renders Edit/Back Buttons if current user is author -->
+<div class="btn-group pull-right">
+  <%= link_to posts_path, class: 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+      Back
+  <% end %>
   <% if @post.user == current_user %>
-    <div class="btn-group pull-right">
-    <%= link_to posts_path, class: 'btn btn-default' do %>
-      <span class="glyphicon glyphicon-list-alt"></span>
-        Back
-    <% end %>
     <%= link_to edit_post_path(@post), class: 'btn btn-primary' do %>
       <span class="glyphicon glyphicon-pencil"></span>
         Edit
-      <% end %>
-    </div>
+    <% end %>
   <% end %>
+</div>
 
-<!-- Shows post documentation -->
-<dl class="dl-horizontal">
-  <dt>Url:</dt>
-  <dd><%= @post.url %></dd>
+<!-- Main link w/ title -->
+<div class="page-header">
+  <h1><a href="<%= @post.url %>"><%= @post.title %></a><br> <small>Submitted by <%= @post.user.first_name %></small></h1>
+  <br>
 
-  <dt>Message:</dt>
-  <dd><%= @post.message %></dd>
+  <!-- Shows message -->
+  <h3><small><%= @post.message %></small></h3>
+  </div>
 
-  <dt>Created:</dt>
-  <dd><%= @post.created_at %></dd>
+  <!-- Upvote/Downvote -->
+    <div class="btn-group pull-right">
+      <%= link_to like_post_path(@post), method: :put, class: "btn btn-default btn-sm" do %>
+        <span class="glyphicon glyphicon-chevron-up"></span>
+        Upvote
+        <%= @post.get_upvotes.size %>
+      <% end %>
+      <%= link_to dislike_post_path(@post), method: :put, class: "btn btn-default btn-sm" do %>
+        <span class="glyphicon glyphicon-chevron-down"></span>
+        Downvote
+        <%= @post.get_downvotes.size %>
+      <% end %>
+      </div>
+<br>
+  <!-- Comments -->
+  <h3 class="comments_title">
+  <%= @post.comments.count %> Comments
+</h3>
 
-</dl>
+<div id="comments">
+  <%= render :partial => @post.comments %>
+</div>
+<%= simple_form_for [@post, Comment.new]  do |f| %>
+  <div class="field">
+    <%= f.text_area :body, class: "form-control" %>
+  </div>
+  <br>
+  <%= f.submit "Add Comment", class: "btn btn-primary" %>
+<% end %>

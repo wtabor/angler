@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :comments
   root to: 'posts#index'
 
   resources :users
@@ -11,6 +12,7 @@ Rails.application.routes.draw do
       put "like",    to: "posts#upvote"
       put "dislike", to: "posts#downvote"
     end
+    resources :comments
   end
 
   match '/about',   to: 'static_pages#about',   via: 'get'
