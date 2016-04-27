@@ -13,4 +13,8 @@ User.create!(first_name:            "Example",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
 
+Post.create!(title:            "General Assembly opens in Atlanta",
+             url:             "https://generalassemb.ly/",
+             user_id:                 1)
+
 #Create sample titles
