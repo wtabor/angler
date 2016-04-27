@@ -1,6 +1,6 @@
   <!-- Renders if signed in -->
 
-  <% if @post.user == current_user -%>
+  <% if @post.user == current_user %>
   <div class="btn-group pull-right">
     <%= link_to 'Destroy Post', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-destroy" %>
   </div>
