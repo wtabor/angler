@@ -1,10 +1,12 @@
 
-# Angler
+# Welcome to the Crow's Nest!
 
-#####A news hub for fishing enthusiasts!
+#####Your news hub for all things pirate!
 
 ### Version
 1.0
+
+[Heroku]
 
 ### Minimum Requirements
  [General Assembly] rubric
@@ -23,9 +25,13 @@
 [Trello]
 
 Wireframe Home: ![alt-text][Wireframe]
+
 Wireframe Post: ![alt-text][Wireframe2]
+
 Wireframe Sign In: ![alt-text][Wireframe3]
+
 Wireframe Sign Up: ![alt-text][Wireframe4]
+
 ERD: ![alt-text][Wireframe5]
 
 ###Features
@@ -36,6 +42,7 @@ ERD: ![alt-text][Wireframe5]
   - Upvote/Downvote posts
   - Comment on posts
   - Full CRUD with hidden editing
+  -
 
 ###Technologies
   - Ruby/Rails
@@ -43,37 +50,37 @@ ERD: ![alt-text][Wireframe5]
   - CSS
   - Bootstrap
   - PostgresQL
+  - acts_as_votable
+  - simple_form
+  - puma
+
 
 
 ### User Stories
+As a *Pirate*
+
+I want to *read pirate news*
+
+to *stay up to date on the best plundering techniques*
+
 As a *User*
 
-I want to *Play Tic-Tac-Toe against a friend*
+I want to *be able to upvote and downvote*
 
-to *determine a winner from a best of five*
+As a *Reader*
 
-As a *Player*
-
-I want to *Keep score over the course of multiple games*
-
-As a *Player*
-
-I want to *Tic-Tac-Toe to load and start*
+I want *links to click through properly*
 
 without *needing to hit multiple buttons*
 
+As a *User not signed in*
+
+I want to *be able to view, even if I can't comment*
+
 As a *User*
 
-I want the format *to look, feel, and act familar*
+I want to *Sign in and edit my posts*
 
-As a *User*
-
-I want to *avoid misclicks*
-
-to *keep the game fair and functional*
-
-### Functionality
-Game found here: [GH-Pages]
 
 
 * Define Variables
@@ -83,9 +90,9 @@ Game found here: [GH-Pages]
 
 ### Todos
 
- - Add Hover Move Cursor
  - Additional Styling
- - Randomizer
+ - Pictures
+ - Email for account verification
 
 License
 ----
@@ -97,7 +104,7 @@ MIT
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 
-   [GH-Pages]: <http://wtabor.github.io/tic-tac-toe/>
+   [Heroku]: <https://thecrowsnest.herokuapp.com/>
    [General Assembly]: <https://github.com/ATL-WDI-Exercises/project-two-requirements>
    [dill]: <https://github.com/joemccann/dillinger>
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
