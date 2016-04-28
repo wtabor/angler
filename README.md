@@ -2,7 +2,7 @@
 # Angler
 
 #####A news hub for fishing enthusiasts!
- 
+
 ### Version
 1.0
 
@@ -25,8 +25,12 @@
 Wireframes:
 
 ![alt-text][Wireframe]
+![alt-text][Wireframe2]
+![alt-text][Wireframe3]
+![alt-text][Wireframe4]
+![alt-text][Wireframe5]
 
-###Features 
+###Features
   - Log in/Log out
   - Authentication
   - Authorization
@@ -41,8 +45,8 @@ Wireframes:
   - CSS
   - Bootstrap
   - PostgresQL
-  
-  
+
+
 ### User Stories
 As a *User*
 
@@ -78,7 +82,7 @@ Game found here: [GH-Pages]
 
 
 
-  
+
 ### Todos
 
  - Add Hover Move Cursor
@@ -101,7 +105,11 @@ MIT
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
    [jQuery]: <http://jquery.com>
    [Trello]: <https://trello.com/b/ceBOmnGB>
-   [Wireframe]: https://github.com/wtabor/tic-tac-toe/blob/gh-pages/images/tic-wireframe.png "Wireframe"
+   [Wireframe]:  https://github.com/wtabor/angler/tree/master/app/assets/images/Home.png "Wireframe"
+   [Wireframe2]: https://github.com/wtabor/angler/tree/master/app/assets/images/Post.png "Wireframe2"
+   [Wireframe3]: https://github.com/wtabor/angler/tree/master/app/assets/images/Sign In.png "Wireframe3"
+   [Wireframe4]: https://github.com/wtabor/angler/tree/master/app/assets/images/Sign Up.png "Wireframe4"
+   [Wireframe5]: https://github.com/wtabor/angler/tree/master/app/assets/images/New Mockup 2.png "Wireframe5"
 
 
    [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
