@@ -6,22 +6,36 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-#Create original user
+#Create original users
 User.create!(first_name:            "Bootstrap",
              last_name:             "Will",
              email:                 "bootstrapwill@gmail.com",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
 
-#Create original user
+
 User.create!(first_name:            "Captain",
              last_name:             "Blackbeard",
              email:                 "blackbeard@gmail.com",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
 
-Post.create!(title:            "General Assembly opens in Atlanta",
-             url:             "https://generalassemb.ly/",
+#Create sample titles
+Post.create!(title:            "No One On Pirate Ship Has Any Idea What ‘Splicing The Mainbrace’ Means",
+             url:              "http://www.theonion.com/article/no-one-on-pirate-ship-has-any-idea-what-splicing-t-50256",
+             message:          "Can you believe this??"
              user_id:                 1)
 
-#Create sample titles
+Post.create!(title:            "Pirate Written Up For Dress-Code Violation",
+             url:              "http://www.theonion.com/audio/pirate-written-up-for-dress-code-violation-21186",
+             message:          "Can you believe this??"
+             user_id:                 1)
+
+Post.create!(title:            "McCutchen hits 3 homers, Pirates beat Rockies 9-4",
+             url:              "http://www.cbssports.com/mlb/gametracker/recap/MLB_20160426_PIT@COL",
+             message:          "Can you believe this??"
+             user_id:                 1)
+
+
+
+
