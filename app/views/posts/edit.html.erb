@@ -1,5 +1,4 @@
-  <!-- Renders if signed in -->
-
+  <!-- Renders if signed in to destroy post-->
   <% if @post.user == current_user %>
   <div class="btn-group pull-right">
     <%= link_to 'Destroy Post', @post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-danger btn-destroy" %>

@@ -19,12 +19,12 @@
 <br>
   <%= link_to like_post_path(@post), method: :put, class: "btn btn-default btn-sm" do %>
     <span class="glyphicon glyphicon-chevron-up"></span>
-      Upvote
+      Aye!
         <%= @post.get_upvotes.size %>
   <% end %>
     <%= link_to dislike_post_path(@post), method: :put, class: "btn btn-default btn-sm" do %>
       <span class="glyphicon glyphicon-chevron-down"></span>
-        Downvote
+        Aarrgh!
       <%= @post.get_downvotes.size %>
   <% end %>
 </div>
@@ -35,20 +35,22 @@
 
 
 </div>
-  <!-- Shows message -->
-  <h3><small><%= @post.message %></small></h3>
+<!-- Shows message -->
+<h3><small><%= @post.message %></small></h3>
 
 
 <br>
-  <!-- Comments -->
-  <h3 class="comments_title">
-  <%= @post.comments.count %> Comments
+
+<!-- Comments -->
+<h3 class="comments_title">
+<%= @post.comments.count %> Comments
 </h3>
+<div id="comments">
+  <%= render :partial => @post.comments %>
+</div>
 
-
-  <div id="comments">
-    <%= render :partial => @post.comments %>
-  </div>
+<!-- Renders ability to comment if signed in -->
+<% if signed_in? %>
   <%= simple_form_for [@post, Comment.new]  do |f| %>
     <div class="field">
       <%= f.text_area :body, class: "form-control" %>
@@ -56,3 +58,4 @@
     <br>
     <%= f.submit "Add Comment", class: "btn btn-primary" %>
   <% end %>
+<% end %>
