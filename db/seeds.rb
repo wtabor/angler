@@ -23,18 +23,15 @@ User.create!(first_name:            "Captain",
 #Create sample titles
 Post.create!(title:            "No One On Pirate Ship Has Any Idea What ‘Splicing The Mainbrace’ Means",
              url:              "http://www.theonion.com/article/no-one-on-pirate-ship-has-any-idea-what-splicing-t-50256",
-             message:          "Can you believe this??",
-             user_id:                 1)
+             message:          "Can you believe this??")
 
 Post.create!(title:            "Pirate Written Up For Dress-Code Violation",
              url:              "http://www.theonion.com/audio/pirate-written-up-for-dress-code-violation-21186",
-             message:          "Can you believe this??",
-             user_id:                 1)
+             message:          "Can you believe this??")
 
 Post.create!(title:            "McCutchen hits 3 homers, Pirates beat Rockies 9-4",
              url:              "http://www.cbssports.com/mlb/gametracker/recap/MLB_20160426_PIT@COL",
-             message:          "Can you believe this??",
-             user_id:                 1)
+             message:          "Can you believe this??")
 
 
 
