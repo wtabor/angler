@@ -12,3 +12,5 @@ User.create!(first_name:            "Bootstrap",
              email:                 "bootstrapwill@gmail.com",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
+
+
