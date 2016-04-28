@@ -105,9 +105,9 @@ MIT
    [git-repo-url]: <https://github.com/joemccann/dillinger.git>
    [jQuery]: <http://jquery.com>
    [Trello]: <https://trello.com/b/ceBOmnGB>
-   [Wireframe]:  https://github.com/wtabor/angler/tree/master/app/assets/images/Home.png "Wireframe"
+   [Wireframe]: https://github.com/wtabor/angler/blob/master/app/assets/images/Home.png "Wireframe"
    [Wireframe2]: https://github.com/wtabor/angler/tree/master/app/assets/images/Post.png "Wireframe2"
-   [Wireframe3]: https://github.com/wtabor/angler/tree/master/app/assets/images/Sign In.png "Wireframe3"
+   [Wireframe3]:  https://github.com/wtabor/angler/tree/master/app/assets/images/Sign In.png "Wireframe3"
    [Wireframe4]: https://github.com/wtabor/angler/tree/master/app/assets/images/Sign Up.png "Wireframe4"
    [Wireframe5]: https://github.com/wtabor/angler/tree/master/app/assets/images/New Mockup 2.png "Wireframe5"
 
