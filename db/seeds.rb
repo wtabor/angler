@@ -12,7 +12,3 @@ User.create!(first_name:            "Bootstrap",
              email:                 "bootstrapwill@gmail.com",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
-
-
-Post.create!(title:            "General Assembly opens in Atlanta",
-             url:              "https://generalassemb.ly/")
