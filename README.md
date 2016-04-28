@@ -22,13 +22,11 @@
 ### Planning
 [Trello]
 
-Wireframes:
-
-![alt-text][Wireframe]
-![alt-text][Wireframe2]
-![alt-text][Wireframe3]
-![alt-text][Wireframe4]
-![alt-text][Wireframe5]
+Wireframe Home: ![alt-text][Wireframe]
+Wireframe Post: ![alt-text][Wireframe2]
+Wireframe Sign In: ![alt-text][Wireframe3]
+Wireframe Sign Up: ![alt-text][Wireframe4]
+ERD: ![alt-text][Wireframe5]
 
 ###Features
   - Log in/Log out
@@ -106,10 +104,10 @@ MIT
    [jQuery]: <http://jquery.com>
    [Trello]: <https://trello.com/b/ceBOmnGB>
    [Wireframe]: https://github.com/wtabor/angler/blob/master/app/assets/images/Home.png "Wireframe"
-   [Wireframe2]: https://github.com/wtabor/angler/tree/master/app/assets/images/Post.png "Wireframe2"
-   [Wireframe3]:  https://github.com/wtabor/angler/tree/master/app/assets/images/Sign In.png "Wireframe3"
-   [Wireframe4]: https://github.com/wtabor/angler/tree/master/app/assets/images/Sign Up.png "Wireframe4"
-   [Wireframe5]: https://github.com/wtabor/angler/tree/master/app/assets/images/New Mockup 2.png "Wireframe5"
+   [Wireframe2]: https://github.com/wtabor/angler/blob/master/app/assets/images/Post.png "Wireframe2"
+   [Wireframe3]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign In.png "Wireframe3"
+   [Wireframe4]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign Up.png "Wireframe4"
+   [Wireframe5]: https://github.com/wtabor/angler/blob/master/app/assets/images/New Mockup 2.png "Wireframe5"
 
 
    [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
