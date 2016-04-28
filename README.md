@@ -105,9 +105,9 @@ MIT
    [Trello]: <https://trello.com/b/ceBOmnGB>
    [Wireframe]: https://github.com/wtabor/angler/blob/master/app/assets/images/Home.png "Wireframe"
    [Wireframe2]: https://github.com/wtabor/angler/blob/master/app/assets/images/Post.png "Wireframe2"
-   [Wireframe3]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign In.png "Wireframe3"
-   [Wireframe4]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign Up.png "Wireframe4"
-   [Wireframe5]: https://github.com/wtabor/angler/blob/master/app/assets/images/New Mockup 2.png "Wireframe5"
+   [Wireframe3]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign_In.png "Wireframe3"
+   [Wireframe4]: https://github.com/wtabor/angler/blob/master/app/assets/images/Sign_Up.png "Wireframe4"
+   [Wireframe5]: https://github.com/wtabor/angler/blob/master/app/assets/images/New_Mockup_2.png "Wireframe5"
 
 
    [PlDb]: <https://github.com/joemccann/dillinger/tree/master/plugins/dropbox/README.md>
