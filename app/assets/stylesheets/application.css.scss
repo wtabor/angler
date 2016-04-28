@@ -1,9 +1,9 @@
-@import "cerulean-variables.css.scss";
+@import "yeti-variables.css.scss";
 @import "bootstrap-variables.scss";
 @import "bootstrap-custom-variables.scss";
 @import "bootstrap-sprockets.scss";
 @import "bootstrap.scss";
-@import "cerulean.css.scss";
+@import "yeti.css.scss";
 
 
 main.container-fluid {
@@ -13,7 +13,6 @@ main.container-fluid {
 
 body {
   margin-top: 2em;
-  background-color: #e6f3ff
 }
 
 .posts {
@@ -34,5 +33,7 @@ textarea.form-control {
     padding-top: 9px;
     font-weight: bold;
     }
+
+
 
 

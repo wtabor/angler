@@ -7,9 +7,16 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 #Create original user
-User.create!(first_name:            "Example",
-             last_name:             "User",
-             email:                 "example@gmail.com",
+User.create!(first_name:            "Bootstrap",
+             last_name:             "Will",
+             email:                 "bootstrapwill@gmail.com",
+             password:              "Foobar123",
+             password_confirmation: "Foobar123")
+
+#Create original user
+User.create!(first_name:            "Captain",
+             last_name:             "Blackbeard",
+             email:                 "blackbeard@gmail.com",
              password:              "Foobar123",
              password_confirmation: "Foobar123")
 

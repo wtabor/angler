@@ -31,7 +31,7 @@
 
   <!-- Post link and title -->
   <h1><a href="<%= @post.url %>" target="_blank"><%= @post.title %></a></h1>
-  <large>Submitted by <%= @post.user.first_name %> <%= @post.user.last_name %></large>
+  <large>Spotted by <%= @post.user.first_name %> <%= @post.user.last_name %></large>
 
 
 </div>
@@ -42,8 +42,8 @@
 <br>
 
 <!-- Comments -->
-<h3 class="comments_title">
-<%= @post.comments.count %> Comments
+<h4 class="comments_title">
+<%= @post.comments.count %> Avasts!
 </h3>
 <div id="comments">
   <%= render :partial => @post.comments %>
@@ -56,6 +56,6 @@
       <%= f.text_area :body, class: "form-control" %>
     </div>
     <br>
-    <%= f.submit "Add Comment", class: "btn btn-primary" %>
+    <%= f.submit "Avast!", class: "btn btn-primary" %>
   <% end %>
 <% end %>

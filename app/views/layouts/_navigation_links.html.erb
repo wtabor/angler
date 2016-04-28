@@ -3,7 +3,7 @@
 
 <!-- Signed in links -->
 <% if signed_in? %>
-<li><%= link_to "Toss A Line", new_post_path %></li>
+<li><%= link_to "Bottle a Message", new_post_path %></li>
 
 <!-- Dropdown menu -->
 <li class="dropdown">
@@ -11,11 +11,11 @@
     Captain's Log <b class="caret"></b>
   </a>
   <ul class="dropdown-menu">
-    <li><%= link_to "Profile", user_path(@current_user) %></li>
-    <li><%= link_to "Settings", edit_user_path(@current_user) %></li>
+    <li><%= link_to "View Log", user_path(@current_user) %></li>
+    <li><%= link_to "Edit Log", edit_user_path(@current_user) %></li>
     <li class="divider"></li>
     <li>
-      <%= link_to "Set Sail", signout_path, method: "delete" %>
+      <%= link_to "Walk the Plank!", signout_path, method: "delete" %>
     </li>
   </ul>
 </li>
@@ -23,8 +23,8 @@
 <!-- Not signed in links -->
 <% else %>
 
-  <li><%= link_to 'Come Aboard', signup_path %></li>
-  <li><%= link_to 'Join the Crew', signin_path %></li>
+  <li><%= link_to 'Come Aboard', signin_path %></li>
+  <li><%= link_to 'Join the Crew!', signup_path %></li>
 
 <% end %>
 
