@@ -94,7 +94,8 @@ I want to *Sign in and edit my posts*
 
 ### Todos
 
- - Additional Styling
+ - Custom SCSS, no bootstrap
+ - Relationships model
  - Pictures
  - Email for account verification
 
