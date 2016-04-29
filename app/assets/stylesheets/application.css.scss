@@ -7,16 +7,12 @@
 
 
 main.container-fluid {
-  padding: 2em;
+  padding: 1em;
   margin-left: 2em;
 }
 
 body {
   margin-top: 2em;
-}
-
-.posts {
-  margin-left: 2em;
 }
 
 textarea.form-control {
@@ -43,6 +39,17 @@ textarea.form-control {
 #message {
   padding-bottom: 10em;
 }
+
+small.author {
+  font-size: .4em;
+  padding-top: -10px;
+}
+
+.githubbuttons {
+  margin: 0 auto;
+}
+
+
 
 
 

@@ -1,7 +1,7 @@
 
-# Welcome to the Crow's Nest!
+# Welcome to The Crow's Nest!
 
-#####Your news hub for all things pirate!
+#### Your news hub for all things pirate!
 
 ### Version
 1.0
@@ -34,6 +34,11 @@ Wireframe Sign Up: ![alt-text][Wireframe4]
 
 ERD: ![alt-text][Wireframe5]
 
+###Models
+  -User Model
+  -Post Model
+  -Comment Model
+
 ###Features
   - Log in/Log out
   - Authentication
@@ -42,7 +47,6 @@ ERD: ![alt-text][Wireframe5]
   - Upvote/Downvote posts
   - Comment on posts
   - Full CRUD with hidden editing
-  -
 
 ###Technologies
   - Ruby/Rails
