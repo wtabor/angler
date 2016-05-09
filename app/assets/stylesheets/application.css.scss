@@ -11,6 +11,10 @@ main.container-fluid {
   margin-left: 2em;
 }
 
+.container {
+  width: 100%;
+}
+
 body {
   margin-top: 2em;
 }
@@ -50,6 +54,15 @@ textarea.form-control {
 
 small.author {
   font-size: .5em;
+}
+
+.div.img_logo {
+  margin-top: 10px;
+  margin-left: 2em;
+}
+
+.a.navbar-brand {
+  margin-left: 2em;
 }
 
 
