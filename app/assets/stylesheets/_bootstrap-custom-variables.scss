@@ -1,25 +1,53 @@
 // custom settings for Twitter Bootstrap
 
-  main.container-fluid {
+/* ================================ */
+/* CLASSES */
+/* ================================ */
+
+main.container-fluid {
   padding: 2em;
   margin-left: 2em;
 }
-
 .container {
   width: 100%;
 }
-
-body {
-  margin-top: 2em;
-}
-
 .posts {
   margin-left: 2em;
 }
-
-textarea.form-control {
-  height: 10em;
+.div.img_logo {
+  margin-top: 10px;
+  margin-left: 2em;
 }
+.message {
+  .a {
+  font-size: .2em;
+  }
+  .h2:hover {
+    text-decoration: none;
+  }
+}
+
+.a.navbar-brand {
+  margin-left: 2em;
+}
+.jumbotron {
+  background: rgba(220, 220, 220, 0.75);
+}
+
+.btn {
+  border-radius: 12px;
+  border-color: $gray-dark;
+  background-color: $gray-dark;
+  color: #C5C5C5;
+
+  .btn-sm {
+
+  }
+}
+
+/* ================================ */
+/* IDs */
+/* ================================ */
 
 #logo {
     font-size: 1.7em;
@@ -42,29 +70,19 @@ textarea.form-control {
   padding-bottom: 10em;
 }
 
-.githubbuttons {
-  margin: 0 auto;
-}
+/* ================================ */
+/* Global */
+/* ================================ */
 
+body {
+  margin-top: 2em;
+}
+textarea.form-control {
+  height: 10em;
+}
 small.author {
   font-size: .5em;
 }
-
-.div.img_logo {
-  margin-top: 10px;
-  margin-left: 2em;
-}
-
-.a {
-  color: #DCDCDC;
-}
-
-.a.navbar-brand {
-  margin-left: 2em;
-}
-
-
-
 video {
     position: fixed;
     top: 50%;
@@ -82,6 +100,4 @@ video {
     background-size: cover;
 }
 
-.jumbotron {
-  background: rgba(220, 220, 220, 0.75);
-  }
+

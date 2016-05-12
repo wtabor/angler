@@ -4,7 +4,7 @@
 
 <!-- Main page populating with posts -->
 <% @posts.each do |post| %>
-  <div class="">
+  <div class="message">
     <h2>
       <%= link_to post.title, post %><br>
       <small class="author">Spotted <%= time_ago_in_words(post.created_at) %> by <%= post.user.first_name %> <%= post.user.last_name %></small>
